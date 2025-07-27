@@ -13,43 +13,6 @@ This project analyzes the relationship between Bitcoin market sentiment (Fear & 
   - Hyperliquid historical trades (211,224 records)
   - Bitcoin Fear & Greed Index (2,644 daily records)
 
-##  Project Structure
-BITCOIN_TRADING_ANALYSIS/
-├── data/
-│   ├── outputs/                         # Generated analysis outputs
-│   │   ├── analysis_report.txt          # Summary report of key findings
-│   │   ├── cluster_analysis.png         # Cluster visualization of traders
-│   │   ├── correlation_heatmap.png      # Heatmap of feature correlations
-│   │   ├── sentiment_distribution.png   # Distribution of sentiment scores
-│   │   ├── trader_metrics.csv           # Metrics calculated per trader
-│   │   └── trader_performance.png       # Trader performance visualization
-│   │
-│   ├── processed/
-│   │   └── merged_data.csv              # Cleaned and merged dataset
-│   │
-│   └── raw/
-│       ├── fear_greed_index.csv         # Market sentiment (Fear & Greed Index)
-│       └── historical_data.csv          # Raw historical trading data
-│
-├── notebooks/                           # Jupyter notebooks for analysis
-│   ├── 01_data_exploration.ipynb        # Initial EDA
-│   ├── 02_data_preprocessing.ipynb      # Data cleaning and feature engineering
-│   ├── 03_sentiment_analysis.ipynb      # Analysis of sentiment index
-│   └── 04_final_analysis.ipynb          # Final analysis and insights
-│
-├── src/                                 # Source code
-│   ├── __pycache__/                     # Compiled cache files
-│   ├── analyzer.py                      # Core analysis functions
-│   ├── data_loader.py                   # Functions to load raw/processed data
-│   ├── preprocessor.py                  # Data cleaning and transformation logic
-│   ├── visualizer.py                    # Visualization helper functions
-│   ├── inspect_data.py                  # Data validation/checking scripts
-│   └── main.py                          # Main script for running pipeline
-│
-├── README.md                            # Project overview and documentation
-└── requirements.txt                     # Python dependencies and libraries
-
-
 ##  Key Findings
 ### Market Sentiment Impact
 | Sentiment       | Avg PnL | Win Rate | Trade Volume |
