@@ -1,0 +1,60 @@
+BITCOIN TRADING ANALYSIS REPORT
+==================================================
+
+1. DATA OVERVIEW
+--------------------------------------------------
+Analysis Period: 2023-04-30 to 2025-05-01
+Total Trades Analyzed: 211,224
+Unique Traders: 32
+
+2. MARKET SENTIMENT ANALYSIS
+--------------------------------------------------
+Performance by Sentiment Class:
+
+               closedPnL                          trade_value is_profitable
+                    mean           sum        std        mean          mean
+Classification                                                             
+Extreme Fear     50.3372  1.072334e+06  1149.2775   5465.2576        0.4179
+Extreme Greed    65.0851  2.615121e+06   732.1906   3164.8791        0.4633
+Fear             46.6268  2.868016e+06   903.1586   7906.8210        0.4207
+Greed            50.1246  2.439463e+06  1166.6667   5537.6416        0.3932
+Neutral          32.9102  1.302025e+06   558.5673   4846.4909        0.3625
+
+Best Performing Sentiment: Extreme Greed
+Worst Performing Sentiment: Neutral
+
+3. TRADER PERFORMANCE
+--------------------------------------------------
+Top 5 Performing Traders:
+
+                                       account     total_pnl  win_rate  trade_count
+27  0xb1231a4a2dd02f2276fa3c5e2a2f3436e6bfed23  2.143383e+06    0.3371        14733
+0   0x083384f897ee0f19899168e3b1bec365f52a9012  1.600230e+06    0.3596         3818
+29  0xbaaaf6571ab7d571043ff1e313a9609a10637864  9.401638e+05    0.4676        21192
+13  0x513b8629fe877bb581bf244e326a047b249c4ff1  8.404226e+05    0.4012        12236
+31  0xbee1707d6b44d4d52bfe19e41f8a828645437aab  8.360806e+05    0.4282        40184
+
+Overall Performance Statistics:
+Average PnL: 321779.97
+Median Win Rate: 39.20%
+Most Active Trader: 0xbee1707d6b44d4d52bfe19e41f8a828645437aab (40184 trades)
+
+4. STATISTICAL FINDINGS
+--------------------------------------------------
+PNL_TTEST:
+  - {'t_statistic': -0.5608896855743057, 'p_value': 0.5748738825293804, 'significant': False}
+
+5. RECOMMENDATIONS & INSIGHTS
+--------------------------------------------------
+- Strategies performed best during Extreme Greed market conditions
+
+Trader Cluster Insights:
+         count          mean            std          min            25%          50%           75%           max
+cluster                                                                                                         
+0         23.0  1.081854e+05  169289.917046 -167621.1248   22123.666300   67845.6195  1.295219e+05  6.777471e+05
+1          5.0  6.097289e+05  561685.651282  199505.5927  403011.504200  416541.8723  4.293556e+05  1.600230e+06
+2          4.0  1.190012e+06  637395.707946  836080.5531  839337.054675  890293.1807  1.240969e+06  2.143383e+06
+- Consider analyzing successful cluster patterns
+
+- Review top performers for replicable strategies
+- Examine correlation heatmap for significant relationships
